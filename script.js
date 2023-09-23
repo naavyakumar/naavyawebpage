@@ -80,7 +80,7 @@ document.querySelectorAll("#explore").forEach(function (elem) {
   elem.addEventListener("click", function () {
     tl2
       .to(
-        "#NAAVYA K-N",
+        "#kothik-k",
         {
           left: "-15%",
           top: "-15%",
@@ -93,7 +93,7 @@ document.querySelectorAll("#explore").forEach(function (elem) {
         "sw"
       )
       .to(
-        "#NAAVYA K-A",
+        "#kothik-o",
         {
           top: "-20%",
           scale: "2",
@@ -105,7 +105,7 @@ document.querySelectorAll("#explore").forEach(function (elem) {
         "sw"
       )
       .to(
-        "#NAAVYA-A2",
+        "#kothik-t",
         {
           left: "115%",
           top: "-20%",
@@ -118,7 +118,7 @@ document.querySelectorAll("#explore").forEach(function (elem) {
         "sw"
       )
       .to(
-        "#NAAVYA K-V",
+        "#kothik-h",
         {
           left: "115%",
           top: "110%",
@@ -131,7 +131,7 @@ document.querySelectorAll("#explore").forEach(function (elem) {
         "sw"
       )
       .to(
-        "#NAAVYA K-Y",
+        "#kothik-i",
         {
           left: "35%",
           top: "120%",
@@ -144,7 +144,7 @@ document.querySelectorAll("#explore").forEach(function (elem) {
         "sw"
       )
       .to(
-        "NAAVYA K-A3",
+        "#kothik-k2",
         {
           left: "-15%",
           top: "80%",
@@ -176,4 +176,150 @@ document.querySelectorAll("#explore").forEach(function (elem) {
         opacity: 0,
       });
   });
+});
+
+function example() {
+  window.location.href = "again.html";
+}
+
+// video 3 --------------
+
+var tl7 = gsap.timeline();
+tl7.from(
+  ".main-abhishek",
+  {
+    opacity: "0",
+    ease: "expo.inout",
+    duration: 1,
+  },
+  "anim3"
+);
+tl7
+  .from(
+    ".front-page-img",
+    {
+      opacity: "0",
+      ease: "expo.inout",
+      duration: 1,
+    },
+    "anim3"
+  )
+  .from(
+    "#line-effect-3",
+    {
+      opacity: "0",
+      ease: "expo.inout",
+      duration: 1,
+    },
+    "anim3"
+  )
+  .from(
+    "#line-effect-1",
+    {
+      height: "0%",
+      ease: "expo.inout",
+      duration: 2,
+    },
+    "anim1"
+  )
+  .from(
+    "#line-effect-2",
+    {
+      height: "0%",
+      ease: "expo.inout",
+      duration: 1,
+    },
+    "anim2"
+  )
+  .from(
+    ".img-one",
+    {
+      height: "0%",
+      ease: "expo.inout",
+      duration: 1,
+    },
+    "anim1"
+  )
+  .from(
+    ".mandit",
+    {
+      width: "0%",
+      opacity: 0,
+      ease: "expo.inout",
+      duration: 1,
+    },
+    "anim1"
+  )
+  .from(
+    ".mandit-2",
+    {
+      height: "0%",
+      opacity: 0,
+      ease: "expo.inout",
+      duration: 1,
+    },
+    "anim1"
+  )
+  .from(
+    ".main-txt-front",
+    {
+      opacity: 0,
+      ease: "expo.inout",
+      delay: -0.5,
+      duration: 1,
+    },
+    "anim2"
+  )
+  .from(
+    "#circle",
+    {
+      opacity: 0,
+      ease: "expo.inout",
+      duration: 2,
+    },
+    "anim2"
+  )
+  .from(
+    "#nav",
+    {
+      top: -50,
+      opacity: 0,
+      ease: "expo.inout",
+      duration: 1,
+    },
+    "anim2"
+  );
+
+document
+  .querySelector("#cntr-nav .ri-menu-line")
+  .addEventListener("click", function () {
+    document.querySelector(".upar-menu").style.top = "0%";
+    document.querySelector(".upar-menu .ri-close-fill").style.display =
+      "initial";
+    document.querySelector("#cntr-nav .ri-menu-line").style.display = "none";
+  });
+
+document
+  .querySelector(".upar-menu .ri-close-fill")
+  .addEventListener("click", function () {
+    document.querySelector(".upar-menu").style.top = "-100%";
+    document.querySelector(".upar-menu .ri-close-fill").style.display = "none";
+    document.querySelector("#cntr-nav .ri-menu-line").style.display = "initial";
+  });
+
+document.querySelector("#abhishek").addEventListener("mousemove", function () {
+  document.querySelector("#slider-upar-wala").style.marginTop = "0%";
+  document.querySelector("#abhishek").style.cursor = "pointer";
+});
+document.querySelector("#amarjeet").addEventListener("mousemove", function () {
+  document.querySelector("#slider-upar-wala").style.marginTop = "-50vh";
+  document.querySelector("#amarjeet").style.cursor = "pointer";
+});
+document.querySelector("#rk").addEventListener("mousemove", function () {
+  document.querySelector("#slider-upar-wala").style.marginTop = "-100vh";
+  document.querySelector("#rk").style.cursor = "pointer";
+});
+document.querySelector("#ak").addEventListener("mousemove", function () {
+  document.querySelector("#slider-upar-wala").style.marginTop = "-150vh";
+  document.querySelector("#ak").style.cursor = "pointer";
 });
